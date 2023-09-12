@@ -36,37 +36,63 @@ nav{
 
     ul li #a{
         font-size: 25px;
+
      }
      
      nav p{ 
         margin-left: 20px;
     }
     
-    a{
+    a{ font-family:'Inter', sans-serif;
         text-decoration: none;
-        color: black;
+        
     }
     
      #a:hover{
         color: rgba(255, 255, 255, 0.76);
+       
     }
 
     button{
          display: flex;
          justify-content: center;
          align-items: center;
-         background: white;
+         background: #03045F;
          padding:10px;
          margin-left:10px ;
          width: 120px;
          border: none;
          border-radius: 5px;
-         box-shadow: 2px 2px 2px 2px white;
+         box-shadow: 1px 1px 1px 1px ;
     }
 
-    .deconect{color: black;
+    .deconect{ color: white;
         font-family:'Inter', sans-serif;
     }
     button:hover{
         scale: 1.05;
+     }
+     /* fin nav */
+
+     .ilustration{
+        position: relative;
+        top: 150px;
+        left: 60%;
+        width: 450px;
+        height: 450px;
+        background: url(../../image/istockphoto-1319766088-612x612.jpeg);
+        background-size: cover;
+        border-radius: 15px;
+     }
+     .blocdetext {
+      
+        width: 30%;
+        margin-left: 20%;
+        margin-top: -100px;
+      
+     }
+     .blocdetext p{
+
+        font-size: 30px;
+        font-family:'Inter', sans-serif;
      }

@@ -33,9 +33,11 @@ input{
    padding: 12px;
    margin-bottom: 10px;
    outline-color:rgba(255, 166, 0, 0.574) ;
-   border:none;
-   background:white;
-  box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+   /* background:white; */
+   border-radius: 5px;
+   border: 2px solid gray;
+  /* box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
   backdrop-filter: blur(2px);
 }
 label{
@@ -57,6 +59,7 @@ button{
     width: 250px;
     padding: 10px;
     background: #007BE5;
+    
     border: none;
     border-radius: 20px;
     margin-top: 10px;
@@ -69,7 +72,10 @@ button:hover{
 }
 button a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.65);
+    color: #ffff;
+    font-weight: bold;
+    font-size: 15px;
+    /* color: rgba(255, 255, 255, 0.65); */
     font-family:'Inter', sans-serif;
 }
 
