@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jacques+Francois+Shadow&family=Lato&family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Quicksand:wght@400;500&display=swap');
+body{margin: 0 ;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* barre de navigation */
+nav{
+    background:#007BE5;
+   display: flex;
+   width: 100%;
+   position: fixed; 
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   z-index: 1;  
+}
+
+ nav .onglets ul li{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.76);
+    margin:0 20px;
+    line-height: 80px;
+    
+    }
+    .onglets ul{
+        margin-right: 40px;
+    }
+
+    ul li #a{
+        font-size: 25px;
+     }
+     
+     nav p{ 
+        margin-left: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+     #a:hover{
+        color: rgba(255, 255, 255, 0.76);
+    }
+
+    button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: white;
+         padding:10px;
+         margin-left:10px ;
+         width: 120px;
+         border: none;
+         border-radius: 5px;
+         box-shadow: 2px 2px 2px 2px white;
+    }
+
+    .deconect{color: black;
+        font-family:'Inter', sans-serif;
+    }
+    button:hover{
+        scale: 1.05;
+     }
