@@ -3,6 +3,7 @@
 body{margin: 0 ;
     padding: 0;
     overflow-x: hidden;
+    background: #cacde6;
 }
 
 *{box-sizing: border-box;
@@ -43,14 +44,17 @@ nav{
         margin-left: 20px;
     }
     
-    a{ font-family:'Inter', sans-serif;
+    .a{color: white;
+         font-family:'Inter', sans-serif;
         text-decoration: none;
         
     }
     
-     #a:hover{
-        color: rgba(255, 255, 255, 0.76);
-       
+     .a:hover{
+        
+        text-decoration: underline;
+       transition: 0.5s;
+       transform:skew(0.5) ;
     }
 
     button{
@@ -66,7 +70,8 @@ nav{
          box-shadow: 1px 1px 1px 1px ;
     }
 
-    .deconect{ color: white;
+    .deconect{
+        text-decoration: none; color: white;
         font-family:'Inter', sans-serif;
     }
     button:hover{
@@ -75,24 +80,56 @@ nav{
      /* fin nav */
 
      .ilustration{
+        margin: 0 auto;
+        width: 70%;
+        height: 550px;
         position: relative;
         top: 150px;
-        left: 60%;
-        width: 450px;
-        height: 450px;
         background: url(../../image/istockphoto-1319766088-612x612.jpeg);
         background-size: cover;
+        background-position: center;
         border-radius: 15px;
+       
      }
-     .blocdetext {
-      
-        width: 30%;
-        margin-left: 20%;
-        margin-top: -100px;
-      
-     }
-     .blocdetext p{
-
+     
+     .ilustration p{
+        text-align: center;
+        position: absolute;
+        top: 200px;
+        left: 280px;
         font-size: 30px;
         font-family:'Inter', sans-serif;
+        
      }
+
+     .cardre{
+        margin-top: 300px;
+         
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+
+     }
+     .sujet{
+        width: 300px;
+        height: 150px;
+        background: white;
+        margin-left: 30px;
+        border-radius: 20px;
+        display: flex;
+       justify-content: center;
+       text-align: center;
+       box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+     }
+
+      
+   .text {
+        
+        text-align: center;
+        margin-top:40px;
+        width: 250px;
+   }
+   .text p{
+    text-align: justify;
+   }
