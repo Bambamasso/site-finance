@@ -133,29 +133,30 @@ nav{
     text-align: justify;
    }
 
-   .section2{
-    width: 100%;
+   .section1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
    }
 
     .apropos{
-        background: #007BE5;
+        width: 400px;
+        height: 300px;
+        background: url(../../image/R.png);
+        background-size: cover;
+        margin-top: 250px;
+        margin-left: 150px;
+    }
+    .objectif{
         margin-top: 80px;
-        width: 50%;
-        margin-left: 200px;
     }
-
-    h2{
-        text-decoration:underline ;
+    .objectif .p{
+        font-size: 25px;
+        font-weight: bold;
+        font-family:'Inter', sans-serif;
     }
-
-   .objectif{
-     margin-top: 20px;
-     
-   }
-   .p{
-    font-weight: bold;
-   }
-    .option{
-        margin-top: 15px;
+    .objectif .definition{
+        margin-top: 40px;
+        font-family:'Inter', sans-serif;
+        font-size: 18px;
     }
-    
