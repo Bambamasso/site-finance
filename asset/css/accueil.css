@@ -125,7 +125,6 @@ nav{
 
       
    .text {
-        
         text-align: center;
         margin-top:40px;
         width: 250px;
@@ -133,3 +132,30 @@ nav{
    .text p{
     text-align: justify;
    }
+
+   .section2{
+    width: 100%;
+   }
+
+    .apropos{
+        background: #007BE5;
+        margin-top: 80px;
+        width: 50%;
+        margin-left: 200px;
+    }
+
+    h2{
+        text-decoration:underline ;
+    }
+
+   .objectif{
+     margin-top: 20px;
+     
+   }
+   .p{
+    font-weight: bold;
+   }
+    .option{
+        margin-top: 15px;
+    }
+    
