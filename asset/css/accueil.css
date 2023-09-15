@@ -3,7 +3,7 @@
 body{margin: 0 ;
     padding: 0;
     overflow-x: hidden;
-    background: #cacde6;
+    background: rgba(225, 255, 255, );
 }
 
 *{box-sizing: border-box;
@@ -14,11 +14,11 @@ body{margin: 0 ;
 
 /* barre de navigation */
 nav{
-    background:#007BE5;
+    background: white;
    display: flex;
    width: 100%;
    position: fixed; 
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    height: 80px;
    z-index: 1;  
@@ -36,7 +36,7 @@ nav{
     }
 
     ul li #a{
-        font-size: 25px;
+        font-size: 30px;
 
      }
      
@@ -44,10 +44,9 @@ nav{
         margin-left: 20px;
     }
     
-    .a{color: white;
+    .a{color: #050621;
          font-family:'Inter', sans-serif;
-        text-decoration: none;
-        
+        text-decoration: none; 
     }
     
      .a:hover{
@@ -80,12 +79,15 @@ nav{
      /* fin nav */
 
      .ilustration{
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
-        width: 70%;
+        width: 100%;
+        max-width: 100%;
         height: 550px;
         position: relative;
         top: 150px;
-        background: url(../../image/istockphoto-1319766088-612x612.jpeg);
+        background: url(../../image/ART_C001_PCE_331_2_20221208200622.png);
         background-size: cover;
         background-position: center;
         border-radius: 15px;
@@ -96,15 +98,55 @@ nav{
         text-align: center;
         position: absolute;
         top: 200px;
-        left: 280px;
-        font-size: 30px;
+        font-size: 35px;
         font-family:'Inter', sans-serif;
+        color: white;
+        font-weight: bold;
+       
         
      }
 
-     .cardre{
-        margin-top: 300px;
+
+     .section1{
+     width: 100%;
+     }
+  
+     .position{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px;
+        
+      
+     }
+  
+      .apropos{
+          width: 400px;
+          height: 300px;
+          background-size: cover;
+          background-position: center;
+          margin-top: 250px;
          
+      }
+      .objectif{
+        margin-top: 150px;
+          margin-left: 50px;
+      }
+      .objectif .p{
+          font-size: 30px;
+          font-weight: bold;
+          color: #050621;
+          font-family:'Inter', sans-serif;
+      }
+       .objectif .definition{
+          margin-top: 40px;
+          font-family:'Inter', sans-serif;
+          font-size: 18px;
+         
+      }
+
+     .cardre{
+         margin-top: 300px;
           width: 100%;
           display: flex;
           justify-content: center;
@@ -113,7 +155,7 @@ nav{
      }
      .sujet{
         width: 300px;
-        height: 150px;
+        height: 300px;
         background: white;
         margin-left: 30px;
         border-radius: 20px;
@@ -121,42 +163,25 @@ nav{
        justify-content: center;
        text-align: center;
        box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       border: 1px solid #CA970c;
      }
 
       
    .text {
         text-align: center;
-        margin-top:40px;
+      
         width: 250px;
    }
    .text p{
     text-align: justify;
+    margin-top: 20px;
+
    }
 
-   .section1{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   footer{
+    background: #050621;
+    width: 100%;
+    height: 500px;
    }
 
-    .apropos{
-        width: 400px;
-        height: 300px;
-        background: url(../../image/R.png);
-        background-size: cover;
-        margin-top: 250px;
-        margin-left: 150px;
-    }
-    .objectif{
-        margin-top: 80px;
-    }
-    .objectif .p{
-        font-size: 25px;
-        font-weight: bold;
-        font-family:'Inter', sans-serif;
-    }
-    .objectif .definition{
-        margin-top: 40px;
-        font-family:'Inter', sans-serif;
-        font-size: 18px;
-    }
+   

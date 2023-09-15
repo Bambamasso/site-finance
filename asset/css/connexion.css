@@ -2,19 +2,19 @@
 
 body {
    margin: 0 auto;
-   background-color: #007BE5;
-
+   background: white;
+ 
 
 }
-.p{
+.p{ padding-top: 30px;
     text-align: center;
     font-size: 30px;
-    color: #c07503;
+    color: #CA970C  ;
     font-family:'Inter', sans-serif;
+    text-decoration:underline ;
 }
 
-.connexion{
-    background: white;
+.connexion{ background: #050621;
   margin: 0 auto;
   width: 400px;
   height: 420px;
@@ -27,20 +27,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 input{
    width: 250px;
    padding: 12px;
    margin-bottom: 10px;
-   outline-color:rgba(255, 166, 0, 0.574) ;
-  
-   /* background:white; */
+   outline:none;
    border-radius: 5px;
-   border: 2px solid gray;
-  /* box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
-  backdrop-filter: blur(2px);
+   border: 1px solid #CA970C
+ 
+ 
 }
-label{
+label{color: white;
     font-family:'Inter', sans-serif;
 }
 .inscrire{
@@ -58,7 +57,7 @@ label{
 button{
     width: 250px;
     padding: 10px;
-    background: #007BE5;
+    background: #CA970C;
     
     border: none;
     border-radius: 20px;
@@ -82,6 +81,7 @@ button a{
 .inscrire a{
     font-family:'Inter', sans-serif;
     text-decoration: none;
+    color: #ffffff7a;
 }
 
 .conexion img:hover{
@@ -97,6 +97,10 @@ a img:hover{
 }
  p #a{ font-family:'Inter', sans-serif;
     text-decoration: none;
-    
+    color: #ffffff7a;
+}
+.neutre{
+    color: white;
+    font-family:'Inter', sans-serif;
 }
 
