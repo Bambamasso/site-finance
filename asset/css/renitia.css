@@ -2,19 +2,18 @@
 
 body {
    margin: 0 auto;
-   background-color: #007BE5;
-
 
 }
 .p{
     text-align: center;
     font-size: 30px;
     color: #c07503;
+    text-decoration: underline;
     font-family:'Inter', sans-serif;
 }
 
 .connexion{
-    background: white;
+    background: #050621;
   margin: 0 auto;
   width: 400px;
   height: 300px;
@@ -32,13 +31,13 @@ input{
    width: 250px;
    padding: 12px;
    margin-bottom: 10px;
-   outline-color:rgba(255, 166, 0, 0.574) ;
-   border:none;
+   outline:none;
+   border:1px solid #c07503;
    background:white;
-  box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
+  /* box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+ 
 }
-label{
+label{color: white;
     font-family:'Inter', sans-serif;
 }
 .inscrire{
@@ -56,7 +55,7 @@ label{
 button{
     width: 250px;
     padding: 10px;
-    background: #007BE5;
+    background: #c07503;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
@@ -67,9 +66,9 @@ button:hover{
     scale: 1.05;
     transition: 0.3s;
 }
-button a{
+button a{color: white;
+    font-weight: bold;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.65);
     font-family:'Inter', sans-serif;
 }
 

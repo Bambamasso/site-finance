@@ -2,18 +2,20 @@
 
 body {
    margin: 0 auto;
-   background-color: #007BE5;
+  
 }
 
-.p{
+.p{padding-top:50px ;
     text-align: center;
     font-size: 30px;
     color: #c07503;
     font-family:'Inter', sans-serif;
+    text-decoration: underline;
 }
 
-.connexion{
-    background: white;
+.connexion
+
+{background: #050621;
   margin: 0 auto;
   width: 400px;
   height: 650px;
@@ -21,6 +23,7 @@ body {
   border-radius: 20px;
 }
 .élements{
+   margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,23 +32,24 @@ input{
    width: 250px;
    padding: 12px;
    margin-bottom: 10px;
-   outline-color:rgba(255, 166, 0, 0.574) ;
-   border:none;
+   outline:none;
    background:white;
-  box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(2px);
+  /* box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+  border: 1px solid #c07503;
+  border-radius: 5px;
 }
 label{
-    font-family:'Inter', sans-serif; 
+    font-family:'Inter', sans-serif;
+    color: white; 
 }
 
 button{
     width: 250px;
     padding: 10px;
-    background: #007BE5;
+    background: #c07503;
     border: none;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     box-shadow: 1px 1px 1px 1px ;
 }
 
@@ -55,7 +59,8 @@ button:hover{
 }
 button a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.65);
+    color: #fff;
+    font-size: bold;
     font-family:'Inter', sans-serif;
 }
 

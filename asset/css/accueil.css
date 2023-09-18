@@ -18,7 +18,7 @@ nav{
    display: flex;
    width: 100%;
    position: fixed; 
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
    height: 80px;
    z-index: 1;  
@@ -35,18 +35,14 @@ nav{
         margin-right: 40px;
     }
 
-    ul li #a{
-        font-size: 30px;
-
-     }
-     
      nav p{ 
-        margin-left: 20px;
+        margin-left: 80px;
     }
     
     .a{color: #050621;
          font-family:'Inter', sans-serif;
-        text-decoration: none; 
+        text-decoration: none;
+        font-size: 20px; 
     }
     
      .a:hover{
@@ -60,7 +56,7 @@ nav{
          display: flex;
          justify-content: center;
          align-items: center;
-         background: #03045F;
+         background: #050621;
          padding:10px;
          margin-left:10px ;
          width: 120px;
@@ -91,6 +87,7 @@ nav{
         background-size: cover;
         background-position: center;
         border-radius: 15px;
+        margin-bottom: 300px;
        
      }
      
@@ -102,10 +99,7 @@ nav{
         font-family:'Inter', sans-serif;
         color: white;
         font-weight: bold;
-       
-        
      }
-
 
      .section1{
      width: 100%;
@@ -115,21 +109,12 @@ nav{
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 80px;
-        
-      
+      margin-top: 0px;
      }
   
-      .apropos{
-          width: 400px;
-          height: 300px;
-          background-size: cover;
-          background-position: center;
-          margin-top: 250px;
-         
-      }
+    
       .objectif{
-        margin-top: 150px;
+         margin-top: 80px;
           margin-left: 50px;
       }
       .objectif .p{
@@ -142,11 +127,12 @@ nav{
           margin-top: 40px;
           font-family:'Inter', sans-serif;
           font-size: 18px;
+          text-align: justify;
          
       }
 
      .cardre{
-         margin-top: 300px;
+         margin-top: 150px;
           width: 100%;
           display: flex;
           justify-content: center;
@@ -169,14 +155,31 @@ nav{
       
    .text {
         text-align: center;
-      
         width: 250px;
    }
+ 
+   .text img{
+    margin-top: 20px;
+   }
+
    .text p{
     text-align: justify;
     margin-top: 20px;
 
    }
+
+   .position2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+   }
+
+.controle{
+    margin-bottom: 150px;
+    font-family:'Inter', sans-serif;
+    font-size: 20px;
+}
 
    footer{
     background: #050621;
