@@ -1,0 +1,27 @@
+body{
+margin: 0 auto;
+
+
+}
+
+
+
+  #sidebarre{
+position: fixed;
+background: #dedff3;
+height: 100vh;
+min-width: 150px;
+text-align: left;
+}
+ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #050621;
+   
+    text-align: left;
+}
+
+

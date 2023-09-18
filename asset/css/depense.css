@@ -1,0 +1,55 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    
+    }
+    
+    
+    
+      #sidebarre{
+    position: fixed;
+    background: #dedff3;
+    height: 100vh;
+    min-width: 150px;
+    text-align: left;
+    }
+    ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    li a{
+        text-decoration: none;
+        color: #050621;
+       
+        text-align: left;
+    }
+
+   
+    .permier{
+        margin-left: 300px;
+    }
+
+
+    .monBudget{
+      
+        overflow: auto;
+        
+    }
+    
+    .budget{
+        margin-top: 50px;
+        border: none;
+    }
+
+    #unité{
+        border: 1px solid ;
+       
+    }
+    td{
+       padding: 50Px;
+       font-size: 20px;
+       background:rgb(205, 206, 231)1;
+       
+    }
+    
+    
