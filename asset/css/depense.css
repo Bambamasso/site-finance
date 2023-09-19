@@ -1,17 +1,19 @@
 body{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
+    background: #050621;
     
     }
-    
-    
+    *{
+        box-sizing: border-box;
+    }
     
       #sidebarre{
-    position: fixed;
-    background: #dedff3;
-    height: 100vh;
-    min-width: 150px;
-    text-align: left;
+     position: fixed;
+     background: white;
+     height: 100vh;
+     min-width: 150px;
+     text-align: left;
     }
     ul li{
         list-style-type: none;
@@ -27,92 +29,122 @@ body{
         color: #595f03;
     }
 
+    .sous li{
+        height: auto;
+        float: left;
+       width:135px ;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .sous a{
+        padding: 15px 0;
+        display: block;
+    }
    
-    .permier{
-        margin-left: 200px;
-       
-    }
-    .tableau{
-       
-    }
+    .sous li ul {
 
-
-    .monBudget{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-        overflow: auto;
-        margin-bottom: 30px;
-        height: 50px;
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
     }
-    .monBudget button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin-right: 80px;
-        border-radius: 20px;
-        border: none;
-        
-    }
-    .monBudget button a{
-       text-decoration: none;
-
-    }
-
-    .monBudget p{
-       font-size: 20px;
+    .sous li:hover ul{
+        display: block;
     }
     
-    .budget{
-        margin-top: 50px;
-        border: none;
+
+    .sous li ul li a:hover{
+      color: #595f03;
     }
 
-    #unité{
-        border: 1px solid ;
+    /* partie budget */
+
+    .permier{
+      margin: 0 auto;
+      position: absolute;
+      margin-left: 400px;
+    
        
     }
-    td{
-       padding: 10Px;
-       font-size: 20px;
-       background:rgb(205, 206, 231)1;
-       
-    }
-   /* partie des depenses */
+
+   
+   .monBudget{
+    margin-top: 100px;
+    margin-left: 80px;
+      display: flex;
+     align-items: center;
+   }
+
+   .p{
+      font-size: 40px;
+      color: white;
+      text-decoration: underline;
+      text-align: center;
+      
+
+   }
+
+  .formulaire{ border:1px solid #CA970C;
+        background: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .formulaire p{
+    color: #050621;
+    font-size: 30px;
+  }
+
+  input{
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border: 1px solid #CA970C;
+    border-radius: 8px;
+    
+  }
+
+  .enregistrement{
+   margin-top: 10px;
+    
+  }
+#envoie{
+    width: 100px;
+    background: #050621;
+    color: white;
+    border: none;
+   
+}
+
 
     .lesdepenses{
         margin-top: 30px;
+       
     }
     
 
     .depensefixe{
      margin-bottom: 50px;
+     margin-left: 200px;
+   
+
     }
 
    .fixe{
-    width: 100%;
-    background: #dfdff0;
+    background: white;
+     border-collapse: collapse;
+     border: 1px solid #CA970C;
+    width: 800px;
     padding: 10px;
    }
 
-    .depenseoccasionnelle{
-        margin-bottom: 50px;
-    }
+   th{
+    padding: 20px;
+    color:#050621 ;
+   }
+   
 
-    .occasion{
-        width: 100%;
-        padding: 10px;
-    }
-
-    .depensecourant{
-      
-
-    }
-
-    .courant{
-        width: 100%;
-        padding: 10px; 
-    }
-    
+   
     

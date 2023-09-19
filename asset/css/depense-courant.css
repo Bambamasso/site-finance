@@ -1,0 +1,152 @@
+
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background: #050621;
+    
+    }
+    
+      #sidebarre{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    min-width: 150px;
+    text-align: left;
+    }
+    ul li{
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    li a{
+        text-decoration: none;
+        color: #050621;
+       
+        text-align: left;
+    }
+    .active{
+        color: #595f03;
+    }
+
+    .sous li{
+        height: auto;
+        float: left;
+       width:135px ;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .sous a{
+        padding: 15px 0;
+        display: block;
+    }
+   
+    .sous li ul {
+
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .sous li:hover ul{
+        display: block;
+    }
+    
+
+    .sous li ul li a:hover{
+      color: #595f03;
+    }
+
+    .permier{
+        margin-left: 200px;
+ 
+    }
+
+/* partie budget */
+
+.permier{position: absolute;
+    margin-left: 400px;
+    margin-top: px;
+     
+  }
+
+ 
+ .monBudget{
+  margin-top: 100px;
+  margin-left: 80px;
+    display: flex;
+   align-items: center;
+ }
+
+ .p{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    
+
+ }
+
+.formulaire{ border:1px solid #CA970C;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.formulaire p{
+  color: #050621;
+  font-size: 30px;
+}
+
+input{
+  padding: 10px;
+  width: 300px;
+  outline: none;
+  border: 1px solid #CA970C;
+  border-radius: 8px;
+  
+}
+
+.enregistrement{
+ margin-top: 10px;
+  
+}
+#envoie{
+  width: 100px;
+  background: #050621;
+  color: white;
+  border: none;
+ 
+}
+
+
+  .lesdepenses{
+      margin-top: 30px;
+     
+  }
+  
+
+  .depensefixe{
+   margin-bottom: 50px;
+   margin-left: 200px;
+ 
+
+  }
+
+ .fixe{
+  background: white;
+   border-collapse: collapse;
+   border: 1px solid #CA970C;
+  width: 800px;
+  padding: 10px;
+ }
+
+ th{
+  padding: 20px;
+  color:#050621 ;
+ }
+ 
+
+ 
