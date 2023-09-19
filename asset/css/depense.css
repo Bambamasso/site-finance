@@ -23,17 +23,45 @@ body{
        
         text-align: left;
     }
+    .active{
+        color: #595f03;
+    }
 
    
     .permier{
-        margin-left: 300px;
+        margin-left: 200px;
+       
+    }
+    .tableau{
+       
     }
 
 
     .monBudget{
-      
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
         overflow: auto;
+        margin-bottom: 30px;
+        height: 50px;
+    }
+    .monBudget button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-right: 80px;
+        border-radius: 20px;
+        border: none;
         
+    }
+    .monBudget button a{
+       text-decoration: none;
+
+    }
+
+    .monBudget p{
+       font-size: 20px;
     }
     
     .budget{
@@ -46,10 +74,45 @@ body{
        
     }
     td{
-       padding: 50Px;
+       padding: 10Px;
        font-size: 20px;
        background:rgb(205, 206, 231)1;
        
+    }
+   /* partie des depenses */
+
+    .lesdepenses{
+        margin-top: 30px;
+    }
+    
+
+    .depensefixe{
+     margin-bottom: 50px;
+    }
+
+   .fixe{
+    width: 100%;
+    background: #dfdff0;
+    padding: 10px;
+   }
+
+    .depenseoccasionnelle{
+        margin-bottom: 50px;
+    }
+
+    .occasion{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .depensecourant{
+      
+
+    }
+
+    .courant{
+        width: 100%;
+        padding: 10px; 
     }
     
     
