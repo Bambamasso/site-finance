@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription </title>
     <link type="text/css" rel="stylesheet" href="../asset/css/inscription.css">
+    
 </head>
 <body>
     <div class="connexion">
       <p class="p">INSCRIPTION</p>
         <div class="élements">
-            <form action="">
+            <form action="" method="get" class="inscription">
               <label for="">Nom</label><br>
-              <input type="text"><br><br>
+              <input type="text" class="nom"><br><br>
               <label for="">Numéro</label><br>
-              <input type="tel" required="" ><br><br>
+              <input type="tel" required="remplissez ce champ svp" class="numero"><br><br>
               <label for="">Email</label><br>
-              <input type="email"><br><br>
+              <input type="email" class="email"><br><br>
               <label for="">Mot de passe</label><br>
-              <input type="password"><br><br>
+              <input type="password" class="motDePasse"><br><br>
               <label for="">Comfirmer votre mot de passe</label><br>
-              <input type="password">
+              <input type="password" class="confimation">
 
-              <div class="conexion"><button type="submit"><a href="./connexion.html">S'inscrire</a></button></div>
+              <div class="conexion"><button type="submit" class="bouton">S'inscrire</button></div>
                                                                                                                                                                                       
             </form>
 
         </div>
 
     </div>
+    <script src="../js/inscription.js" ></script>
 </body>
 </html>

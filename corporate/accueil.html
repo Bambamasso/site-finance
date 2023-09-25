@@ -4,30 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="../asset/css/bmgest.css">
-    <script>
-        function myFunction() {
-        document.getElementById('sidebar').classList.toggle("open-sidebar");
-        }
-    </script>
-
+    <link type="text/css" rel="stylesheet" href="../asset/css/tebleau-bord.css">
+    
 </head>
 <body>
-     
-      <header id="sidebarre">
-        <img src="../image/hamburger.png"  alt="">
-       <nav>
-        <p style="font-size: 25px; color: #050621;"><samp style="font-size: 60px; color: #050621;">B</samp>mgest</p>
-        <ul>
-            <li><a href="./budget.html">Budget</a></li>
-            <li><a href="">fdhbj</a></li>
-            <li><a href="">uguzgf</a></li>
-            <li><a href="">furuzi</a></li>
+    <nav>
+      <p style="font-size: 25px; color: #050621;"><samp style="font-size: 60px; color: #050621;">B</samp>mgest</p>
 
-             
-        </ul>
-       </nav>
-         
-      </header>
+      <div class="onglet">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="logo"><img src="../image/menu.png" alt=""></label>
+
+        <ul>
+          <li class="deroulant"><a href="accueil.html" class="active">Tableau de bord</a></li>
+          <li class="deroulant"><a href="./revenue.html">Revenues</a></li>
+          <li class="deroulant">
+            <a href="">Budget</a>
+            <ul class="sous">
+              <li><a href="./depense-fixe.html">Dépenses fixe</a></li>
+              <li><a href="./depense-variable.html">Dépenses variables</a></li>
+              <li><a href="./depense-occasionnelle.html">Dépenses occasionnelle</a></li>
+            </ul>
+          </li>
+          <li class="deroulant"><a href="">Dépenses</a></li>
+          <li class="deroulant"><a href="./epargne.html">Epargne</a></li>
+        
+          <li class="deroulant">
+            <a href=""><img src="../image/user.png" alt=""></a>
+            <ul class="sous">
+              <li><a href="./profile.html">Profile</a></li>
+              <li><a href="">Déconnexion</a></li>
+              
+            </ul>
+          </li>
+
+        </ul> 
+
+      </div>
+
+    </nav>
+     
+
+
 </body>
 </html>

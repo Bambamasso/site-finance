@@ -96,67 +96,101 @@ padding: 10px 0px;
   position: relative;
 }
 
-.connexion{position: absolute;
-    margin-top:100px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.profile{
-    max-width: 80%;
-  width: 600px;
-  height: auto;
-  background: pink;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.photo{
-    margin-left: 10px;
- margin-top: 10px;
- margin-bottom: 20px;
-}
-.image{
-    width: 200px;
-    height: 200px;
-    background: url(../../image/tumblr_308deb3b72cb79eb6e87876cf9f1949e_e8f432a0_500.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 300px;
-}
-.elements{
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.elements h2{
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.elements label{
-  font-family:'Inter', sans-serif; ;
+/* partie budget */
 
+.permier{
+  position: relative;
+  top: 100px;
+}
+
+.monBudget{
+ 
+ }
+
+ .p{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+
+ }
+
+.formulaire{
+     width: 100%;
+     display: flex;
+     justify-content: center;    
+}
+
+.renseign{
+  width: 40%;
+  height: auto;
+  border:1px solid #CA970C;
+  background: white;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+}
+
+.formulaire p{
+  margin-top: 20px;
+  text-align: center;
+  color: #050621;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family:'Inter', sans-serif;
 }
 
 input{
-    width: 100%;
-    padding: 8px;
-    outline: none;
-    border: 1px solid #CA970c;  
+  padding: 10px;
+  width: 50%;
+  outline: none;
+  border: 1px solid #CA970C;
+  border-radius: 8px;
 }
-select{
-    width: 100%;
-    padding: 8px; 
-    outline: none;
-    border: 1px solid #CA970c;
-    
-}
-button{
-    margin-top: 20px;
-    padding: 5px;
-    background: #050321;
-    color: white;
-    font-family:'Inter', sans-serif;
 
+.enregistrement{
+  
+  text-align: center;
+  /* width: 50%;
+ margin-top: 10px; */
+  
 }
+#envoie{
+  width: 100px;
+  background: #050621;
+  color: white;
+  border: none;
+  font-family:'Inter', sans-serif;
+  margin-bottom: 10px;
+}
+  .lesdepenses{
+      margin-top: 30px; 
+  }
+  
+  .depensefixe{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   /* margin-bottom: 50px;
+   margin-left: 200px; */
+ 
+  }
+
+ .fixe{
+  background: white;
+   border-collapse: collapse;
+   border: 1px solid #CA970C;
+  width: 60%;
+  padding: 10px;
+ }
+ 
+ .fixe thead{
+  padding: 10px;
+ }
+
+ .fixe th{
+  font-size: 20px;
+  text-align:center;
+  font-family:'Inter', sans-serif;
+ }

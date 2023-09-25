@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../asset/css/depense-fixe.css">
+    
+</head>
+<body>
+  <nav>
+    <p style="font-size: 25px; color: #050621;"><samp style="font-size: 60px; color: #050621;">B</samp>mgest</p>
+    <div class="onglet">
+      <ul>
+        <li class="deroulant"><a href="accueil.html" class="active">Tableau de bord</a></li>
+        <li class="deroulant"><a href="./revenue.html">Revenue</a></li>
+        <li class="deroulant">
+          <a href="">Budget</a>
+          <ul class="sous">
+            <li><a href="./depense-fixe.html" class="active">Dépenses fixe</a></li>
+            <li><a href="./depense-variable.html">Dépenses variables</a></li>
+            <li><a href="./depense-occasionnelle.html">Dépenses occasionnelles</a></li>
+          </ul>
+        </li>
+        <li class="deroulant"><a href="./depenses.html">Dépenses</a></li>
+        <li class="deroulant"><a href="./epargne.html">Epargne</a></li>
+      
+        <li class="deroulant">
+          <a href=""><img src="../image/user.png" alt=""></a>
+          <ul class="sous">
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="">Déconnexion</a></li>
+            
+          </ul>
+        </li>
+
+      </ul> 
+
+    </div>
+
+  </nav>
+   
+   <section class="section1">
+     <div class="permier">
+       <div>
+         <p class="p">Budget des dépenses fixe</p>
+        </div>
+        <div class="monBudget">
+      
+          <div class="formulaire">
+              <div class="renseign">
+                <p>Ajouter une categorie</p>
+                <form action="" method="get" class="enregistrement">
+                  <input type="text" placeholder="Catégorie" class="categorie"  name="categorie" id="categorie"><br><br>
+                  <input type="number" placeholder="Montant prevue" class="montant" name="montant" id="montant"><br><br>
+                  <input type="month" placeholder="" class="mois" name="mois" id="mois"> <br><br>
+                  <input type="submit" value="Enregistrer" id="envoie" class="btn" onclick="addData()">
+  
+                </form>
+              </div>
+            </div>
+           <hr>
+   
+          <div class="depensefixe">
+            <table class="fixe" id="table">
+              <thead>
+                <tr>
+                  <th>Catégorie</th>
+                  <th>Montant</th>
+                  <th>Mois</th>
+                </tr>
+              </thead>
+              <tbody>
+              
+              </tbody>
+             
+            </table>
+          </div>
+         
+        </div>  
+
+     </div>
+    </section>
+<script src="../js/depense-fixe.js"></script>
+</body>
+</html>

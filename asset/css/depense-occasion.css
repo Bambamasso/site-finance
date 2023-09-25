@@ -1,152 +1,200 @@
-body{
-    margin: 0 ;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jacques+Francois+Shadow&family=Lato&family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Quicksand:wght@400;500&display=swap');
+body{margin: 0 ;
     padding: 0;
-    background: #050621;
-    
-    }
-    *{
-        box-sizing: border-box;
-    }
-    
-      #sidebarre{
-    position: fixed;
+    overflow-x: hidden;
+    background:#050621;
+}
+
+*{box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* barre de navigation */
+nav{
     background: white;
-    height: 100vh;
-    min-width: 150px;
-    text-align: left;
-    }
-    ul li{
-        list-style-type: none;
-        margin-bottom: 10px;
-    }
-    li a{
-        text-decoration: none;
-        color: #050621;
-       
-        text-align: left;
-    }
-    .active{
-        color: #595f03;
-    }
+   display: flex;
+   width: 100%;
+   position: fixed; 
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   z-index: 1;
+   box-shadow: 1px 1px 1px 1px ;  
+}
 
-    .sous li{
-        height: auto;
-        float: left;
-       width:135px ;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-    }
-    .sous a{
-        padding: 15px 0;
-        display: block;
-    }
-   
-    .sous li ul {
+nav ul {
+  list-style-type: none;
+}
 
-        display: none;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    .sous li:hover ul{
-        display: block;
-    }
-    
+.onglet ul .deroulant{
+ display: inline;
+ /* width: 25%; */
+  margin-right: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family:'Inter', sans-serif;
+}
 
-    .sous li ul li a:hover{
-      color: #595f03;
-    }
+.onglet ul::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.onglet a{
+display: block;
+text-decoration: none;
+color: #050321;
+border-bottom: 2px solid transparent;
+padding: 10px 0px;
+}
+.onglet a:hover{
+  color: #CA970c;
+  border-bottom: 2px solid;
+}
+.active{
+  color: #CA970c;
+}
 
-    .permier{
-        margin-left: 200px;
- 
-    }
+.sous{
+  display: none;
+ box-shadow: 0px 1px 2px #ccc;
+ background: rgb(108, 14, 14);
+}
+.onglet > ul li:hover .sous{
+  display: block;
+}
+.sous li {
+  float: none;
+  white-space: 100%;
+  text-align: center;
+  /* text-align: left; */
+}
 
+.sous a{
+  text-align: center;
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover{
+  border-bottom: none;
+  background: #ccc;
+}
+.sous{text-align: center;
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 200px;
+  z-index: 1000;
+}
+.onglet ul li {
+  float: left;
+ /* width: 25%; */
+ text-align: center;
+  position: relative;
+}
+  /* fin nav */
 
     /* partie budget */
-
-    .permier{position: absolute;
-        margin-left: 400px;
-        margin-top: px;
-         
-      }
-  
-     
-     .monBudget{
-      margin-top: 100px;
-      margin-left: 80px;
-        display: flex;
-       align-items: center;
+    .permier{
+      position: relative;
+      top: 100px;
+    }
+    .monBudget{
+      
+      
      }
-  
+    
      .p{
         font-size: 40px;
         color: white;
         text-decoration: underline;
         text-align: center;
-        
-  
+        font-family:'Inter', sans-serif;
+    
      }
-  
-    .formulaire{ border:1px solid #CA970C;
-          background: white;
-          padding: 20px;
-          text-align: center;
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    .formulaire{
+         width: 100%;
+         display: flex;
+         justify-content: center;    
     }
-  
+    
+    .renseign{
+      width: 40%;
+      height: auto;
+      border:1px solid #CA970C;
+      background: white;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+    }
+    
     .formulaire p{
+      margin-top: 20px;
+      text-align: center;
       color: #050621;
       font-size: 30px;
+      margin-bottom: 20px;
+      font-family:'Inter', sans-serif;
     }
-  
+    
     input{
       padding: 10px;
-      width: 300px;
+      width: 50%;
       outline: none;
       border: 1px solid #CA970C;
       border-radius: 8px;
-      
     }
-  
+    
     .enregistrement{
-     margin-top: 10px;
+      
+      text-align: center;
+      /* width: 50%;
+     margin-top: 10px; */
       
     }
-  #envoie{
+    #envoie{
       width: 100px;
       background: #050621;
       color: white;
       border: none;
-     
-  }
-  
-  
+      outline: none;
+      font-family:'Inter', sans-serif;
+      margin-bottom: 10px;
+    }
       .lesdepenses{
-          margin-top: 30px;
-         
+          margin-top: 30px; 
       }
       
-  
       .depensefixe{
-       margin-bottom: 50px;
-       margin-left: 200px;
+        width: 100%;
+        display: flex;
+       justify-content: center;
+       margin-top: 50px;
+       /* margin-bottom: 50px;
+       margin-left: 200px; */
      
-  
       }
-  
+    
      .fixe{
       background: white;
        border-collapse: collapse;
        border: 1px solid #CA970C;
-      width: 800px;
+       width: 60%;
+       
+     }
+
+     .fixe thead{
       padding: 10px;
      }
-  
-     th{
-      padding: 20px;
-      color:#050621 ;
+    
+     .fixe th{
+      font-size: 20px;
+      font-family:'Inter', sans-serif;
      }
      
   
