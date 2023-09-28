@@ -41,18 +41,28 @@ let bouton = document.querySelector(".enregistrement");
  function toDoListe(){
   const epargnes = localStorage.EPARGNE;
   const tbody=document.querySelector("tbody");
+  let somme =0
 
   if(epargnes && JSON.parse(epargnes).length){
     JSON.parse(epargnes).forEach((element,indice)=>{
       tbody.innerHTML+=`
       <tr>
         <td>${element.mois}</td>
-        <td >${element.objectif} fcfa</td>
-        <td>${element.montant}</td>
+        <td>${element.objectif} </td>
+        <td>${element.montant}fcfa</td>
       </tr>
       `
     })
   }
+
+  JSON.parse(epargnes).forEach(element => {
+    somme+=Number(element.montant);
+    
+   });console.log(somme);
+
+   let p =document.querySelector(".totale")
+   p.innerHTML= somme+"fcfa";
+
  
  }
 toDoListe();

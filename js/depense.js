@@ -1,64 +1,66 @@
 let bouton = document.querySelector(".enregistrement");
-bouton.addEventListener('submit', (e) => { 
- e.preventDefault();
- let formulaire = e.target;
- console.log(formulaire)
-  let tableDepense = JSON.parse(localStorage.getItem("DEPENSE")) || []
-  let date = document.querySelector(".date");
-  let type = document.querySelector(".type");
-  let montant = document.querySelector(".montant");
-   let categorie = document.querySelector(".categorie");
-
-if(date.value.replaceAll(" ","")){
- if(type.value){
-   if(montant.value){
-    if(categorie.value){
-
-        let depense = {
-            date: date.value,
-            type: type.value,
-            montant: montant.value,
-            categorie:categorie.value
-     
-          };
-     
-          tableDepense.push(depense)
-     
-          localStorage.setItem("DEPENSE", JSON.stringify(tableDepense))
-          alert("effectué avec succès");
-          
-          window.location.reload()
-     
+if(bouton){
+  bouton.addEventListener('submit', (e) => { 
+    e.preventDefault();
+    let formulaire = e.target;
+    console.log(formulaire)
+     let tableDepense = JSON.parse(localStorage.getItem("DEPENSE")) || []
+     let date = document.querySelector(".date");
+     let type = document.querySelector(".type");
+     let montant = document.querySelector(".montant");
+      let categorie = document.querySelector(".categorie");
+   
+   if(date.value.replaceAll(" ","")){
+    if(type.value){
+      if(montant.value){
+       if(categorie.value){
+   
+           let depense = {
+               date: date.value,
+               type: type.value,
+               montant: montant.value,
+               categorie:categorie.value
+        
+             };
+        
+             tableDepense.push(depense)
+        
+             localStorage.setItem("DEPENSE", JSON.stringify(tableDepense))
+             alert("effectué avec succès");
+             
+             window.location.reload()
+        
+       }else{
+           categorie.value
+       }
+   
+      }else{
+        montant.focus()
+      }
     }else{
-        categorie.value
+      type.focus()
     }
-
    }else{
-     montant.focus()
+    date.value=""
+    date.focus()
    }
- }else{
-   type.focus()
- }
-}else{
- date.value=""
- date.focus()
+    
+   
+   })
+   
 }
- 
-
-})
-
 
 
 function toDoListe(){
     const categorie = localStorage.BUDGET_FIXE;
-    const select =document.querySelector(".categorie");
+    const select = document.querySelector(".categorie");
   
     if(categorie && JSON.parse(categorie).length){
       JSON.parse(categorie).forEach((element,indice)=>{
         select.innerHTML+=`
         <option value="${element.categorie}">${element.categorie}</option>
         `
-      });
+      })
 
     }
      
@@ -88,6 +90,7 @@ function toDoListe(){
 
     const depenses = localStorage.DEPENSE;
     const tbody=document.querySelector("tbody");
+    let somme=0
 
     if(depenses && JSON.parse(depenses).length){
       JSON.parse(depenses).forEach((element,indice)=>{
@@ -101,8 +104,18 @@ function toDoListe(){
         </tr>
         `
       })
+
     }
+
+    JSON.parse(depenses).forEach(element => {
+      somme+=Number(element.montant);
+      
+     });console.log(somme);
+  
+     let span = document.querySelector(".prix")
+      span.innerHTML= somme+" fcfa";
    
    }
+
   toDoListe();
   

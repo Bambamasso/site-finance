@@ -2,7 +2,8 @@
 
 body {
    margin: 0 auto;
-   background: white;
+   background: #050621;
+  
  
 
 }
@@ -14,7 +15,8 @@ body {
     text-decoration:underline ;
 }
 
-.connexion{ background: #050621;
+.connexion{  background: white;
+   
   margin: 0 auto;
   width: 400px;
   height: 420px;
@@ -39,7 +41,7 @@ input{
  
  
 }
-label{color: white;
+label{color: #050621;
     font-family:'Inter', sans-serif;
 }
 .inscrire{
@@ -80,7 +82,7 @@ button a{
 .inscrire a{
     font-family:'Inter', sans-serif;
     text-decoration: none;
-    color: #ffffff7a;
+    color: #302e2e5f;
 }
 
 .conexion img:hover{
@@ -96,10 +98,10 @@ a img:hover{
 }
  p #a{ font-family:'Inter', sans-serif;
     text-decoration: none;
-    color: #ffffff7a;
+    color: #2524247a;
 }
 .neutre{
-    color: white;
+    color: #050621;
     font-family:'Inter', sans-serif;
 }
 

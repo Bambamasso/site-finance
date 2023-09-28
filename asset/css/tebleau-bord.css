@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: rgba(225, 255, 255, );
+    background: #050321;
 }
 
 * {
@@ -124,7 +124,7 @@ nav ul {
         display: block;
     }
 
-    .onglet ul .deroulant {
+    .onglet ul {
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -135,11 +135,13 @@ nav ul {
         top: 90px;
         left: 100%;
         transition: all .5s;
+        background: white;
         /* background: #55ca0c;   */
     }
 
      .onglet  .deroulant {
          display: block;
+
 
     }
     
@@ -166,7 +168,7 @@ nav ul {
 .totaleRevenue {
    width: 25%;
    height: 220px;
-   background: #CA970c;
+   background: white;
    border-radius: 20px;
    text-align: center;
    padding: 60px;
@@ -181,6 +183,7 @@ nav ul {
 
 .totaleRevenue span{
   margin-top: 20px;
+  color: #050321;
 
 }
 
@@ -188,7 +191,7 @@ nav ul {
     margin-left: 30px;
     width: 25%;
     height: 220px;
-    background: #CA970c;
+    background: white;
     border-radius: 20px;
     text-align: center;
     padding: 60px;

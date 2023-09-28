@@ -41,7 +41,7 @@ let bouton = document.querySelector(".enregistrement");
  function toDoListe(){
   const budgets = localStorage.BUDGET_OCCASIONNELLE;
   const tbody=document.querySelector("tbody");
-  let somme = 0;
+  let occasion = 0;
 
   if(budgets && JSON.parse(budgets).length){
     JSON.parse(budgets).forEach((element,indice)=>{
@@ -56,12 +56,12 @@ let bouton = document.querySelector(".enregistrement");
   }
 
   JSON.parse(budgets).forEach(element => {
-    somme+=Number(element.montant);
+    occasion+=Number(element.montant);
     
-   });console.log(somme);
+   });console.log(occasion);
 
-   let p =document.querySelector(".totale")
-   p.innerHTML= somme+"fcfa";
+   let p =document.querySelector(".total")
+   p.innerHTML= occasion+"fcfa";
  
  }
 toDoListe();

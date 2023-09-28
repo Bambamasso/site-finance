@@ -41,7 +41,7 @@ let bouton = document.querySelector(".enregistrement");
  function toDoListe(){
   const budgets = localStorage.BUDGET_VARIABLE;
   const tbody=document.querySelector("tbody");
-  let somme = 0;
+  let variable = 0;
 
   if(budgets && JSON.parse(budgets).length){
     JSON.parse(budgets).forEach((element,indice)=>{
@@ -56,11 +56,11 @@ let bouton = document.querySelector(".enregistrement");
   }
  
   JSON.parse(budgets).forEach(element => {
-    somme+=Number(element.montant);
+    variable +=Number(element.montant);
     
-   });console.log(somme);
+   });console.log( variable);
 
    let p =document.querySelector(".totale")
-   p.innerHTML= somme+" fcfa";
+   p.innerHTML=  variable+" fcfa";
  }
 toDoListe();

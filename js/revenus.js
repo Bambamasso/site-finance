@@ -1,6 +1,6 @@
-let bouton = document.querySelector(".enregistrement");
-if (bouton){
-  bouton.addEventListener('submit', (e) => { 
+let envoie = document.querySelector(".enregistrement");
+if (envoie){
+  envoie.addEventListener('submit', (e) => { 
     e.preventDefault();
     let formulaire = e.target;
     console.log(formulaire)
@@ -74,7 +74,7 @@ if (bouton){
     
    });console.log(somme);
 
-   let span = document.querySelector("span")
+   let span = document.querySelector(".span")
     span.innerHTML= somme+" fcfa";
 
  }
