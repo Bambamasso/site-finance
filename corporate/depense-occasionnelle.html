@@ -25,7 +25,7 @@
         <li class="deroulant"><a href="./epargne.html">Epargne</a></li>
       
         <li class="deroulant">
-          <a href=""><img src="../image/user.png" alt=""></a>
+          <a href="" class ="profile"  style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.732), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  background: #050621 ; color: white; "><img src="../image/user.png" alt=""></a>
           <ul class="sous">
             <li><a href="./profile.html">Profile</a></li>
             <li><a href="">Déconnexion</a></li>
@@ -43,7 +43,7 @@
 
 
       <div class="permier">
-
+        <div class="somme"><span>Totale budget</span> <p class="totale"></p></div>
         <div>
           <p class="p">Budget des depenses occasionnelle</p>
          </div>
@@ -51,7 +51,7 @@
         
              <div class="formulaire">
                 <div class="renseign">
-                  <p>Ajouter une depense</p>
+                  <p>Ajouter un nouveau budget</p>
                   <form action="" method="get" class="enregistrement">
                     <input type="text" placeholder="Catégorie" class="categorie"><br><br>
                     <input type="number" placeholder="Montant prevue" class="montant"><br><br>
@@ -69,7 +69,7 @@
                 <tr>
                   <th>Catégorie</th>
                   <th>Montant</th>
-                  <th>Date</th>
+                  <th>Mois</th>
                  </tr>
               </thead>
               <tbody>
@@ -87,6 +87,7 @@
       
 
     </section>
-
+    <script src="../js/depense-occasionnelle .js"></script>
+    <script src="../js/affiche.js"></script>
 </body>
 </html>

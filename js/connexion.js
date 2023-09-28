@@ -1,3 +1,5 @@
+if(localStorage.session) window.location.href="../index.html";
+
 let form = document.querySelector("form")
 
 form.addEventListener("submit", (s) =>{
@@ -15,8 +17,12 @@ tabutilisateur.forEach(element => {
 
 })
 if (typeof r !== "undefined") {
-    alert('corect')
+    console.log(r)
+    alert("l'operation est un succès ")
+    
+    localStorage.setItem("session", JSON.stringify(r))
     window.location.href = "accueil.html"
+   
     //console.log("passer")
 }else{
     alert('faux')

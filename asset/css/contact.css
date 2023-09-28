@@ -88,6 +88,7 @@ nav{
         top: 100px;
         width: 100%;
         height: auto;
+        margin-bottom: 180px;
        
        
      }
@@ -214,4 +215,32 @@ nav{
      }
 
 
-
+     footer{
+      background: #050621;
+      width: 100%;
+      height: 180px;
+      border-top: 1px solid white;
+     }
+  
+     footer .icones{
+     
+      display:flex;
+      justify-content:center;
+      padding:60px 10px
+     }
+  
+     footer .icones .icone{
+      margin-left: 30px;
+     }
+  
+     footer p{
+      color: white;
+      text-align: center;
+      margin-top: -50px;
+      font-size: 18px;
+      font-family:'Inter', sans-serif;
+     }
+  
+  
+     
+  
