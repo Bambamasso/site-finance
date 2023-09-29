@@ -133,6 +133,7 @@ nav ul {
       height: 100vh;
       top: 90px;
       left: 100%;
+      background: white;
       transition: all .5s;
       /* background: #55ca0c;   */
   }
@@ -176,7 +177,7 @@ nav ul {
 .somme .totale{
   margin-top: 10px;
   font-size: 18px;
-  color: red;
+  
 }
 
 .monBudget{
@@ -286,5 +287,34 @@ input{
  .fixe tbody tr:nth-child(even){
   background-color: #dcbf6e;
  }
+
+
+ footer{
+  margin-top: 250px;
+   background: #030303;
+   width: 100%;
+   max-width: 100%;
+   height: 180px;
+   padding: 0px 50px;
+  }
+
+  footer .icones{
+  
+   display:flex;
+   justify-content:center;
+   padding:60px 10px
+  }
+
+  footer .icones .icone{
+   margin-left: 30px;
+  }
+
+  footer p{
+   color: white;
+   text-align: center;
+   margin-top: -50px;
+   font-size: 18px;
+   font-family:'Inter', sans-serif;
+  }
 
  
